@@ -39,3 +39,15 @@ ORDER BY city;
 # distinct
 SELECT DISTINCT city FROM weather;
 ```
+
+## Transaction
+```sql
+BEGIN;
+UPDATE accounts SET balance = balance -100
+ WHERE name = 'Alice';
+-- etc etc
+COMMIT;
+
+
+
+```
