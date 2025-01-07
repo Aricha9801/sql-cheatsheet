@@ -28,6 +28,7 @@ sudo -u postgres psql
 
 
 ```
+# SQL queries
 
 ## Schema
 ```sql
@@ -136,5 +137,22 @@ order_id integer PRIMARY KEY,
 product_no integer REFERENCES products (id),
 quantity integer
 );
+```
+
+# Function
+
+```sql
+# create a function
+CREATE OR REPLACE FUNCTION function_name(param_list)
+ RETURNS return_type
+ LANGUAGE plpgsql
+AS
+$$
+DECLARE
+ -- variable declaration
+BEGIN
+ --  logic
+END;
+$$;
 
 ```
