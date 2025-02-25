@@ -138,6 +138,11 @@ product_no integer REFERENCES products (id),
 quantity integer
 );
 ```
+### Add constraints
+```sql
+ALTER TABLE table
+ALTER COLUMN id SET NOT NULL;
+```
 
 # Function
 
