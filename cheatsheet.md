@@ -92,6 +92,7 @@ ROLLBACK TO my_save_point;
 UPDATE accounts SET balance = balance + 100 WHERE name = 'Wally';
 COMMIT
 ```
+Note that in the transaction, if you want to preview the change, you need to run 'SELECT ...' instead of view the data in a new query.
 
 ## Contraints
 ```sql
